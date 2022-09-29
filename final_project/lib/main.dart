@@ -1,8 +1,5 @@
-import 'package:final_project/models/drama_1.dart';
-import 'package:final_project/models/fiction_2.dart';
-import 'package:final_project/other.dart';
-import 'package:final_project/phi.dart';
-import 'package:final_project/rom.dart';
+import 'package:final_project/models/book.dart';
+import 'package:final_project/screens/book_detail.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,6 +23,47 @@ class MyApp extends StatelessWidget {
 
 class HomeBooks extends StatelessWidget {
   HomeBooks({super.key});
+
+  List<Book> dramaBooks = [
+    Book(
+        title: 'd1',
+        description: 'description',
+        imgUrl: 'assets/images/d_1.jpg',
+        genre: 'drama'),
+    Book(
+        title: 'd2',
+        description: 'description',
+        imgUrl: 'assets/images/d_2.jpg',
+        genre: 'drama'),
+    Book(
+        title: 'd3',
+        description: 'description',
+        imgUrl: 'assets/images/d_3.png',
+        genre: 'drama'),
+    Book(
+        title: 'd4',
+        description: 'description',
+        imgUrl: 'assets/images/d_4.webp',
+        genre: 'drama')
+  ];
+
+  List<Book> philBooks = [
+    Book(
+      title: 'title',
+      description: 'description',
+      imgUrl: 'assets/images/p_1.jpg',
+    ),
+    Book(
+      title: 'title',
+      description: 'description',
+      imgUrl: 'assets/images/p_2.jpg',
+    ),
+    Book(
+      title: 'title',
+      description: 'description',
+      imgUrl: 'assets/images/p_3.jpg',
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +114,10 @@ class HomeBooks extends StatelessWidget {
                         assets: 'assets/images/dd.jpg',
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) => drama()));
+                              builder: (BuildContext context) => BookDetail(
+                                    books: dramaBooks,
+                                    genre: 'Drama',
+                                  )));
                         },
                       ),
                       CategoryCard(
@@ -84,31 +125,34 @@ class HomeBooks extends StatelessWidget {
                         assets: 'assets/images/ph.jpg',
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) => phil()));
+                              builder: (BuildContext context) => BookDetail(
+                                    books: philBooks,
+                                    genre: 'philosophy',
+                                  )));
                         },
                       ),
                       CategoryCard(
                         title: 'Romance',
                         assets: 'assets/images/l.jpg',
                         onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) => rom()));
+                          // Navigator.of(context).push(MaterialPageRoute(
+                          //     builder: (BuildContext context) => BookDetail()));
                         },
                       ),
                       CategoryCard(
                         title: 'fiction',
                         assets: 'assets/images/f.png',
                         onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) => fiction()));
+                          // Navigator.of(context).push(MaterialPageRoute(
+                          //     builder: (BuildContext context) => BookDetail()));
                         },
                       ),
                       CategoryCard(
                         title: 'ohters',
                         assets: 'assets/images/k.jpg',
                         onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) => other()));
+                          // Navigator.of(context).push(MaterialPageRoute(
+                          //     builder: (BuildContext context) => BookDetail()));
                         },
                       ),
                     ],
