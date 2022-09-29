@@ -1,33 +1,19 @@
-> ملاحظة: يجب تعبئة هذا الملف بمعلومات المشروع، يمكنك اختيار اللغة. تأكد من مسح اللغة الأخرى والتعليقات الجانبية
-> ⬇️ تعبئة معلومات المشروع بالعربية  
-<div dir="rtl">
-
-### اسم الطالب
 
 
-### اسم المشروع
 
 
-# شرح الفكرة
-المشكلة والحلول المطروحة إن وجدت
+Student Name
+hafsah Abdulraheem
 
+ Project Name
+let's read
 
-# الأعمال المستقبلية
+Idea
+the idea of the application is when you want to read something new or you are just bored of the typical stuff you read 
+this application will suggest for you a book based on the category you chose 
+or when you are intrested in a new field it could help to start reading in each feild
 
-
-</div>
-
-> Fill out project information in English ⬇️
-### Student Name
-
-
-### Project Name
-
-# Idea
-Problem and solutions if found 
-
-
-# Future Work 
-
+Future Work 
+we can lik it to google data or maybe updated it on a monthly base
 
 
