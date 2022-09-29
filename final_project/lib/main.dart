@@ -120,7 +120,7 @@ class HomeBooks extends StatelessWidget {
     ),
     Book(
       title: 'السماح بالرحيل',
-      description: 'description',
+      description: 'يساعدك الكتاب على اكتشاف اجزاء جديده في شخصيتك',
       imgUrl: 'assets/images/o_2.jpg',
     ),
     Book(
