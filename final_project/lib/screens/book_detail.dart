@@ -62,7 +62,7 @@ class _MyAppState extends State<BookDetail> {
               height: 60,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 202, 241, 240),
+                  backgroundColor: Color.fromARGB(255, 128, 92, 151),
                 ),
                 onPressed: () {
                   play();
